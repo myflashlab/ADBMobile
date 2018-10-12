@@ -1,0 +1,14 @@
+<platform xmlns="http://ns.adobe.com/air/extension/30.0">
+
+	<packagedDependencies>
+		<packagedDependency>adobeMobileLibrary.jar</packagedDependency>
+	</packagedDependencies>
+	
+	<packagedResources>
+		<packagedResource>
+			<packageName>com.myflashlab.ADBMobile</packageName>
+			<folderName>com.myflashlab.ADBMobile-res</folderName>
+		</packagedResource>
+	</packagedResources>
+	
+</platform>

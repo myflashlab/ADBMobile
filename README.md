@@ -2,7 +2,7 @@
 
 The main ANE, **ADBMobile.ane** includes the latest Android [*release notes for Android*](https://marketing.adobe.com/resources/help/en_US/mobile/android/) and iOS [*release notes for iOS*](https://marketing.adobe.com/resources/help/en_US/mobile/ios/) SDKs for Adobe Experience Cloud V4.17.0 being released on *September 20, 2018* 
 
-Make sure to study the [ASDOC](http://myflashlab.github.io/asdoc/com/myflashlab/air/extensions/adobeMobile/package-detail.html) for this ANE to know how to work with it. We have tried to keep the method names similar to the Native methods.
+Make sure to study the [ASDOC](https://myflashlab.github.io/asdoc/com/myflashlab/air/extensions/adobeMobile/package-detail.html) for this ANE to know how to work with it. We have tried to keep the method names similar to the Native methods.
 
 The ANE depends on the [OverrideAir ANE](https://github.com/myflashlab/common-dependencies-ANE/tree/master/overridAir) on both Android and iOS sides and you should be using at least AIR SDK 30 to compile your app. Below is the required manifest .xml settings:
 

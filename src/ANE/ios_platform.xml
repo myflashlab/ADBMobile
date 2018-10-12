@@ -1,0 +1,14 @@
+<platform xmlns="http://ns.adobe.com/air/extension/30.0">
+    <sdkVersion>8.0.0</sdkVersion>
+    <linkerOptions>
+        <option>-ios_version_min 8.0</option>
+		
+        <option>-framework SystemConfiguration</option>
+        <option>-framework CoreLocation</option>
+
+        <option>-lsqlite3.0</option>
+        <option>-lsqlite3</option>
+        <option>-w</option>
+        <option>-ObjC</option>
+    </linkerOptions>
+</platform>
