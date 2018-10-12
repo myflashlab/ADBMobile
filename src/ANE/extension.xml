@@ -1,0 +1,85 @@
+<extension xmlns="http://ns.adobe.com/air/extension/30.0">
+  <id>com.myflashlab.air.extensions.ADBMobile</id>
+  <versionNumber>4.17.0</versionNumber>
+  <copyright>2018, MyFlashLabs Team. All rights reserved.</copyright>
+	<description>
+		<text xml:lang="en">Air Native Extension!</text> 
+	</description> 
+	<platforms>
+  
+		<platform name="Android-ARM">
+			<applicationDeployment>
+				<nativeLibrary>classes.jar</nativeLibrary>
+				<initializer>com.myflashlab.ADBMobile.MyExtension</initializer>
+				<finalizer>com.myflashlab.ADBMobile.MyExtension</finalizer>
+			</applicationDeployment>
+		</platform>
+	
+		<platform name="Android-x86">
+			<applicationDeployment>
+				<nativeLibrary>classes.jar</nativeLibrary>
+				<initializer>com.myflashlab.ADBMobile.MyExtension</initializer>
+				<finalizer>com.myflashlab.ADBMobile.MyExtension</finalizer>
+			</applicationDeployment>
+    </platform>
+	
+		<platform name="iPhone-ARM">
+			<applicationDeployment>
+				<nativeLibrary>libexADBMobile.a</nativeLibrary>
+				<initializer>comMyflashlabsADBMobileMyExtensionInitializer</initializer>
+				<finalizer>comMyflashlabsADBMobileMyExtensionFinalizer</finalizer>
+			</applicationDeployment>
+		</platform>
+	
+		<platform name="default"> 
+			<applicationDeployment/>
+		</platform>
+	
+  </platforms>
+</extension>
+
+<!-- ANE SETUP
+{
+	"minAirVersion":"30.0",
+	"minSwfVersion":"36",
+	"miniOS":"8.0",
+	"minAndroid":"15",
+	"platforms":[
+		{
+			"platform":"android",
+			"dependencies":[
+				{
+					"id":"com.myflashlab.air.extensions.dependency.overrideAir",
+					"v":"5.1.3"
+				}
+			],
+			"manifest":[
+				{
+					"node":"<xml><uses-permission android:name=\"android.permission.INTERNET\"/></xml>",
+					"parent":"manifest",
+					"sibling":""
+				},
+				{
+					"node":"<xml><uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/></xml>",
+					"parent":"manifest",
+					"sibling":""
+				},
+				{
+					"node":"<xml><uses-sdk android:targetSdkVersion=\"26\"/></xml>",
+					"parent":"manifest",
+					"sibling":""
+				}
+			]
+		},
+		{
+			"platform":"ios",
+			"dependencies":[
+				{
+					"id":"com.myflashlab.air.extensions.dependency.overrideAir",
+					"v":"5.1.3"
+				}
+			]
+		}
+	]
+}
+-->
