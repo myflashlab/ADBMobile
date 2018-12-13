@@ -1,36 +1,21 @@
-**Pre-release version** Please do not use in production.
+# ADBMobile ANE for Adobe AIR apps
 
-The main ANE, **ADBMobile.ane** includes the latest Android [*release notes for Android*](https://marketing.adobe.com/resources/help/en_US/mobile/android/) and iOS [*release notes for iOS*](https://marketing.adobe.com/resources/help/en_US/mobile/ios/) SDKs for Adobe Experience Cloud V4.17.0 being released on *September 20, 2018* 
+This ANE provides AIR developers access Adobe Mobile SDK for [Android](https://marketing.adobe.com/resources/help/en_US/mobile/android/) and [iOS](https://marketing.adobe.com/resources/help/en_US/mobile/ios/).
 
-Make sure to study the [ASDOC](https://myflashlab.github.io/asdoc/com/myflashlab/air/extensions/adobeMobile/package-detail.html) for this ANE to know how to work with it. We have tried to keep the method names similar to the Native methods.
+* [Click here for ASDOC](https://myflashlab.github.io/asdoc/com/myflashlab/air/extensions/adobeMobile/package-detail.html)
+* [Click here for Wiki docs](https://github.com/myflashlab/ADBMobile/wiki)
+* [See the ANE setup requirements](https://github.com/myflashlab/ADBMobile/blob/master/src/ANE/extension.xml)
 
-The ANE depends on the [OverrideAir ANE](https://github.com/myflashlab/common-dependencies-ANE/tree/master/overridAir) on both Android and iOS sides and you should be using at least AIR SDK 30 to compile your app. Below is the required manifest .xml settings:
+**IMPORTANT:** Implementing ANEs in your AIR projects means you may be required to add some [dependencies](https://github.com/myflashlab/common-dependencies-ANE) or copy some frameworks or editing your app's manifest file. Our ANE setup instruction is designed in a human-readable format but you may still need to familiarize yourself with this format. [Read this post for more information](https://www.myflashlabs.com/understanding-ane-setup-instruction/)
 
-```xml
-<!-- Android -->
-<uses-permission android:name="android.permission.INTERNET"/>
-<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-<uses-sdk android:targetSdkVersion="26"/>
+If you think manually setting up ANEs in your projects is confusing or time-consuming, you better check the [ANELAB Software](https://github.com/myflashlab/ANE-LAB/).
 
+[![The ANE-LAB Software](https://www.myflashlabs.com/wp-content/uploads/2017/12/myflashlabs-ANE-LAB_features.jpg)](https://github.com/myflashlab/ANE-LAB/)
 
+# Tech Support #
+If you need our professional support to help you with implementing and using the ANE in your project, you can join [MyFlashLabs Club](https://www.myflashlabs.com/product/myflashlabs-club-membership/) or buy a [premium support package](https://www.myflashlabs.com/product/myflashlabs-support/). Otherwise, you may create new issues at this repository and the community might help you.
 
-
-<!-- iOS -->
-<!--
-    Read this link and apply if required based on your apps required specifications:
-    https://marketing.adobe.com/resources/help/en_US/mobile/ios/app_transport_security.html
--->
-
-
-
-
-<!-- Extensions -->
-<extensions>
-	<extensionID>com.myflashlab.air.extensions.ADBMobile</extensionID>
-	<extensionID>com.myflashlab.air.extensions.dependency.overrideAir</extensionID>
-</extensions>
-```
-
+# AIR Usage #
 After implemnting the ANE, it's time to see how the API should be initialized. ANE initialization must happen the soonest possible in your app. The best place for this is the Construction-function of the Document-class of your project.
 
 1. Add the config file, **ADBMobileConfig.json** to you app.
@@ -120,3 +105,17 @@ ADBMobile.media.open(mediaSettings);
 
 // check asdoc to know other methods like ADBMobile.media.stop(
 ```
+
+Are you using this ANE in your project? Maybe you'd like to buy us a beer :beer:?
+
+[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=payments@myflashlabs.com&lc=US&item_name=Donation+to+ADBMobile+ANE&no_note=0&cn=&currency_code=USD&bn=PP-DonationsBF:btn_donateCC_LG.gif:NonHosted)
+
+Add your name to the below list? Donate anything more than $100 and it will be.
+
+## Sponsored by... ##
+<table align="left">
+    <tr>
+        <td align="left"><img src="https://myflashlab.github.io/sponsors/completecontrol.co.uk.jpg" width="60" height="60"></td>
+        <td align="left"><a href="https://www.completecontrol.co.uk">completecontrol.co.uk</a><br>We produce interactive content for the best in children's media</td>
+    </tr>
+</table>

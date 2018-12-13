@@ -1,6 +1,6 @@
 <extension xmlns="http://ns.adobe.com/air/extension/30.0">
   <id>com.myflashlab.air.extensions.ADBMobile</id>
-  <versionNumber>4.17.0</versionNumber>
+  <versionNumber>4.17.1</versionNumber>
   <copyright>2018, MyFlashLabs Team. All rights reserved.</copyright>
 	<description>
 		<text xml:lang="en">Air Native Extension!</text> 
@@ -50,7 +50,7 @@
 			"dependencies":[
 				{
 					"id":"com.myflashlab.air.extensions.dependency.overrideAir",
-					"v":"5.1.3"
+					"v":"5.6.0"
 				}
 			],
 			"manifest":[
@@ -76,7 +76,7 @@
 			"dependencies":[
 				{
 					"id":"com.myflashlab.air.extensions.dependency.overrideAir",
-					"v":"5.1.3"
+					"v":"5.6.0"
 				}
 			]
 		}
