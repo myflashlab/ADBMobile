@@ -13,8 +13,10 @@ import flash.utils.getQualifiedClassName;
  */
 public class ADBMobile
 {
+	private static const DEMO_ANE:Boolean = false;
+	
 	public static const EXTENSION_ID:String = "com.myflashlab.air.extensions.ADBMobile";
-	public static const VERSION:String = "4.17.1";
+	public static const VERSION:String = "4.17.11";
 	
 	private static var _isInitialized:Boolean;
 	private static var _ex:ADBMobile;
@@ -35,7 +37,7 @@ public class ADBMobile
 		OverrideClass["applyToAneLab"](getQualifiedClassName(this));
 		
 		// initialize the context
-		_context = ExtensionContext.createExtensionContext(ADBMobile.EXTENSION_ID, null);
+		_context = ExtensionContext.createExtensionContext(EXTENSION_ID, null);
 		
 		_context.call("command", "initialize", $jsonPath);
 		
@@ -122,7 +124,5 @@ public class ADBMobile
 	{
 		return _isInitialized;
 	}
-	
-	private static const DEMO_ANE:Boolean = false;
 }
 }
