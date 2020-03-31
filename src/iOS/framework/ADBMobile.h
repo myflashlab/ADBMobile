@@ -2,9 +2,9 @@
 //  ADBMobile.h
 //  Adobe Experience Cloud -- iOS Library
 //
-//  Copyright 1996-2018. Adobe, Inc. All Rights Reserved
+//  Copyright 1996-2019. Adobe, Inc. All Rights Reserved
 //
-//  SDK Version: 4.17.0
+//  SDK Version: 4.18.7
 
 #import <Foundation/Foundation.h>
 @class CLLocation, CLBeacon, TVApplicationController,
@@ -209,6 +209,13 @@ FOUNDATION_EXPORT NSString *const __nonnull ADBConfigKeyCallbackDeepLink;
  * 	@param callback a block pointer to call any time adobe creates a piece of data. event(String) is the name of the event that caused the callback. adobeData is a dictionary with all the context data created during that session.
  */
 + (void) registerAdobeDataCallback:(nullable void (^)(ADBMobileDataEvent event, NSDictionary* __nullable adobeData))callback;
+
+/**
+ * @brief Registers a callback to allow for the modification of NSURLSessionConfiguration used by all SDK network methods.
+ * @note Warning: incorrect usage of this method may interrupt the SDK's ability to transmit data.
+ * @param callback a block pointer to call any time a new NSURLSession is being created for internal usage.  configuration(NSURLSessionConfiguration) is a pointer to the configuration that will be used.
+ */
++ (void) registerURLSessionConfigurationCallback: (nullable void (^)(NSURLSessionConfiguration* __nonnull configuration))callback;
 
 #pragma mark - Analytics
 
@@ -709,7 +716,8 @@ FOUNDATION_EXPORT NSString *const __nonnull ADBConfigKeyCallbackDeepLink;
  *  @brief Gets Visitor ID Service identifiers in URL query string form for consumption in hybrid mobile apps.
  *         There will be no leading '&' or '?' punctuation, as the caller is responsible for placing the string in the correct location
  *         of their resulting URL.
- *         If there is not a valid URL string to return, or if an error occurs, callback will contain nil.
+ *         If there is not a valid URL string to return, if an error occurs or the identifiers retrieval takes longer than 30 seconds,
+ *         callback will contain nil.
  *  @param callback a block pointer to call with an NSString value containing the visitor identifiers as a query string upon completion of the service request
  */
 + (void) visitorGetUrlVariablesAsync:(nullable void (^)(NSString* __nullable urlVariables))callback;
@@ -797,6 +805,7 @@ FOUNDATION_EXPORT NSString *const __nonnull ADBTargetParameterMboxHost;         
 
 @property (nonatomic, strong, nonnull) NSString *defaultContent;                         ///< The default content that will be returned if Target servers are unreachable
 @property (nonatomic, strong, nullable) void (^callback)(NSString* __nullable content);  ///< Optional. When batch requesting Target locations, callback will be invoked when content is available for this location.
+@property (nonatomic, strong, nullable) NSDictionary *requestLocationParameters;         ///< Dictionary containing key-value pairs of request location parameters
 
 @end
 

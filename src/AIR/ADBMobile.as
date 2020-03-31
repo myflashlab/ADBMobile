@@ -16,7 +16,7 @@ public class ADBMobile
 	private static const DEMO_ANE:Boolean = false;
 	
 	public static const EXTENSION_ID:String = "com.myflashlab.air.extensions.ADBMobile";
-	public static const VERSION:String = "4.17.11";
+	public static const VERSION:String = "4.18.0";
 	
 	private static var _isInitialized:Boolean;
 	private static var _ex:ADBMobile;

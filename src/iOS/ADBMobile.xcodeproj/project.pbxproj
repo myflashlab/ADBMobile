@@ -9,12 +9,6 @@
 /* Begin PBXBuildFile section */
 		FD638607216A44A3007FE775 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD638606216A44A3007FE775 /* CoreLocation.framework */; };
 		FD63860A216A44FD007FE775 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD638609216A44FD007FE775 /* SystemConfiguration.framework */; };
-		FD91C999216A133300A30FCE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FD91C998216A133300A30FCE /* main.m */; };
-		FD91C99C216A133300A30FCE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FD91C99B216A133300A30FCE /* AppDelegate.m */; };
-		FD91C99F216A133300A30FCE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD91C99E216A133300A30FCE /* ViewController.m */; };
-		FD91C9A2216A133300A30FCE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD91C9A0216A133300A30FCE /* Main.storyboard */; };
-		FD91C9A4216A133300A30FCE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD91C9A3216A133300A30FCE /* Assets.xcassets */; };
-		FD91C9A7216A133300A30FCE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD91C9A5216A133300A30FCE /* LaunchScreen.storyboard */; };
 		FD91C9B6216A135900A30FCE /* exADBMobile.m in Sources */ = {isa = PBXBuildFile; fileRef = FD91C9B5216A135900A30FCE /* exADBMobile.m */; };
 		FD91C9B7216A135900A30FCE /* exADBMobile.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = FD91C9B4216A135900A30FCE /* exADBMobile.h */; };
 		FD91C9C1216A147100A30FCE /* AdobeMobileLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD91C9BE216A147100A30FCE /* AdobeMobileLibrary.a */; };
@@ -35,38 +29,20 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		46E6E1C43C509AFB17A052E3 /* MyFlashLabsClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyFlashLabsClass.h; path = ../../../DEPENDENCY/OverrideAdobe/iOS/exOverrideNative/MyFlashLabsClass.h; sourceTree = "<group>"; };
+		46E6EED10309BA2AB498A812 /* FlashRuntimeExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FlashRuntimeExtensions.h; path = ../../../DEPENDENCY/OverrideAdobe/iOS/exOverrideNative/FlashRuntimeExtensions.h; sourceTree = "<group>"; };
 		FD638606216A44A3007FE775 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		FD638609216A44FD007FE775 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		FD91C994216A133300A30FCE /* ADBMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ADBMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		FD91C998216A133300A30FCE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		FD91C99A216A133300A30FCE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		FD91C99B216A133300A30FCE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		FD91C99D216A133300A30FCE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		FD91C99E216A133300A30FCE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		FD91C9A1216A133300A30FCE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		FD91C9A3216A133300A30FCE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		FD91C9A6216A133300A30FCE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		FD91C9A8216A133300A30FCE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD91C9B2216A135900A30FCE /* libexADBMobile.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libexADBMobile.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD91C9B4216A135900A30FCE /* exADBMobile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = exADBMobile.h; sourceTree = "<group>"; };
 		FD91C9B5216A135900A30FCE /* exADBMobile.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = exADBMobile.m; sourceTree = "<group>"; };
 		FD91C9BC216A147100A30FCE /* ADBMobile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADBMobile.h; sourceTree = "<group>"; };
-		FD91C9BD216A147100A30FCE /* libexOverrideNative.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libexOverrideNative.a; sourceTree = "<group>"; };
 		FD91C9BE216A147100A30FCE /* AdobeMobileLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = AdobeMobileLibrary.a; sourceTree = "<group>"; };
-		FD91C9BF216A147100A30FCE /* MyFlashLabsClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyFlashLabsClass.h; sourceTree = "<group>"; };
-		FD91C9C2216A14FD00A30FCE /* FlashRuntimeExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlashRuntimeExtensions.h; sourceTree = "<group>"; };
 		FD91C9C3216A16ED00A30FCE /* BaseADBMobile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseADBMobile.h; sourceTree = "<group>"; };
 		FD91C9C4216A16ED00A30FCE /* BaseADBMobile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseADBMobile.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		FD91C991216A133300A30FCE /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		FD91C9AF216A135900A30FCE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -80,53 +56,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		46E6EE3EC0EDD592049E423B /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				46E6EED10309BA2AB498A812 /* FlashRuntimeExtensions.h */,
+				46E6E1C43C509AFB17A052E3 /* MyFlashLabsClass.h */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
 		FD91C98B216A133300A30FCE = {
 			isa = PBXGroup;
 			children = (
 				FD91C9BB216A147100A30FCE /* framework */,
-				FD91C996216A133300A30FCE /* ADBMobile */,
 				FD91C9B3216A135900A30FCE /* exADBMobile */,
 				FD91C995216A133300A30FCE /* Products */,
+				46E6EE3EC0EDD592049E423B /* Headers */,
 			);
 			sourceTree = "<group>";
 		};
 		FD91C995216A133300A30FCE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FD91C994216A133300A30FCE /* ADBMobile.app */,
 				FD91C9B2216A135900A30FCE /* libexADBMobile.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FD91C996216A133300A30FCE /* ADBMobile */ = {
-			isa = PBXGroup;
-			children = (
-				FD91C99A216A133300A30FCE /* AppDelegate.h */,
-				FD91C99B216A133300A30FCE /* AppDelegate.m */,
-				FD91C99D216A133300A30FCE /* ViewController.h */,
-				FD91C99E216A133300A30FCE /* ViewController.m */,
-				FD91C9A0216A133300A30FCE /* Main.storyboard */,
-				FD91C9A3216A133300A30FCE /* Assets.xcassets */,
-				FD91C9A5216A133300A30FCE /* LaunchScreen.storyboard */,
-				FD91C9A8216A133300A30FCE /* Info.plist */,
-				FD91C997216A133300A30FCE /* Supporting Files */,
-			);
-			path = ADBMobile;
-			sourceTree = "<group>";
-		};
-		FD91C997216A133300A30FCE /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				FD91C998216A133300A30FCE /* main.m */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		FD91C9B3216A135900A30FCE /* exADBMobile */ = {
 			isa = PBXGroup;
 			children = (
-				FD91C9C2216A14FD00A30FCE /* FlashRuntimeExtensions.h */,
 				FD91C9B4216A135900A30FCE /* exADBMobile.h */,
 				FD91C9B5216A135900A30FCE /* exADBMobile.m */,
 				FD91C9C3216A16ED00A30FCE /* BaseADBMobile.h */,
@@ -141,9 +100,7 @@
 				FD638609216A44FD007FE775 /* SystemConfiguration.framework */,
 				FD638606216A44A3007FE775 /* CoreLocation.framework */,
 				FD91C9BC216A147100A30FCE /* ADBMobile.h */,
-				FD91C9BD216A147100A30FCE /* libexOverrideNative.a */,
 				FD91C9BE216A147100A30FCE /* AdobeMobileLibrary.a */,
-				FD91C9BF216A147100A30FCE /* MyFlashLabsClass.h */,
 			);
 			path = framework;
 			sourceTree = "<group>";
@@ -151,23 +108,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FD91C993216A133300A30FCE /* ADBMobile */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FD91C9AB216A133300A30FCE /* Build configuration list for PBXNativeTarget "ADBMobile" */;
-			buildPhases = (
-				FD91C990216A133300A30FCE /* Sources */,
-				FD91C991216A133300A30FCE /* Frameworks */,
-				FD91C992216A133300A30FCE /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = ADBMobile;
-			productName = ADBMobile;
-			productReference = FD91C994216A133300A30FCE /* ADBMobile.app */;
-			productType = "com.apple.product-type.application";
-		};
 		FD91C9B1216A135900A30FCE /* exADBMobile */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FD91C9B8216A135900A30FCE /* Build configuration list for PBXNativeTarget "exADBMobile" */;
@@ -191,14 +131,9 @@
 		FD91C98C216A133300A30FCE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = myflashlabs;
 				TargetAttributes = {
-					FD91C993216A133300A30FCE = {
-						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 56AX2RU6RZ;
-						ProvisioningStyle = Automatic;
-					};
 					FD91C9B1216A135900A30FCE = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 56AX2RU6RZ;
@@ -208,7 +143,7 @@
 			};
 			buildConfigurationList = FD91C98F216A133300A30FCE /* Build configuration list for PBXProject "ADBMobile" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -219,36 +154,12 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FD91C993216A133300A30FCE /* ADBMobile */,
 				FD91C9B1216A135900A30FCE /* exADBMobile */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXResourcesBuildPhase section */
-		FD91C992216A133300A30FCE /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FD91C9A7216A133300A30FCE /* LaunchScreen.storyboard in Resources */,
-				FD91C9A4216A133300A30FCE /* Assets.xcassets in Resources */,
-				FD91C9A2216A133300A30FCE /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		FD91C990216A133300A30FCE /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FD91C99F216A133300A30FCE /* ViewController.m in Sources */,
-				FD91C99C216A133300A30FCE /* AppDelegate.m in Sources */,
-				FD91C999216A133300A30FCE /* main.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		FD91C9AE216A135900A30FCE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -260,45 +171,35 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		FD91C9A0216A133300A30FCE /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FD91C9A1216A133300A30FCE /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		FD91C9A5216A133300A30FCE /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FD91C9A6216A133300A30FCE /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
 		FD91C9A9216A133300A30FCE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -321,7 +222,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -333,21 +234,30 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -364,7 +274,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -372,35 +282,11 @@
 			};
 			name = Release;
 		};
-		FD91C9AC216A133300A30FCE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 56AX2RU6RZ;
-				INFOPLIST_FILE = ADBMobile/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.myflashlabs.ADBMobile;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		FD91C9AD216A133300A30FCE /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 56AX2RU6RZ;
-				INFOPLIST_FILE = ADBMobile/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.myflashlabs.ADBMobile;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
 		FD91C9B9216A135900A30FCE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEVELOPMENT_TEAM = 56AX2RU6RZ;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/framework",
@@ -417,7 +303,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEVELOPMENT_TEAM = 56AX2RU6RZ;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/framework",
@@ -438,15 +324,6 @@
 			buildConfigurations = (
 				FD91C9A9216A133300A30FCE /* Debug */,
 				FD91C9AA216A133300A30FCE /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FD91C9AB216A133300A30FCE /* Build configuration list for PBXNativeTarget "ADBMobile" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FD91C9AC216A133300A30FCE /* Debug */,
-				FD91C9AD216A133300A30FCE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
