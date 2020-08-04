@@ -1,4 +1,8 @@
-ADBMobile AIR Native Extension
+# ADBMobile AIR Native Extension
+
+*Aug 04, 2020 - v5.0.2*
+- Upgrade the iOS SDK to v4.19.3.
+- Upgrade the Android SDK to v4.18.2.
 
 *Mar 31, 2020 - V4.18.0*
 * updated the iOS SDK to [V4.18.7](https://github.com/Adobe-Marketing-Cloud/mobile-services/releases/tag/v4.18.7-iOS)
