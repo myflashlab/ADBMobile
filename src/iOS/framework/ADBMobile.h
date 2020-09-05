@@ -2,9 +2,9 @@
 //  ADBMobile.h
 //  Adobe Experience Cloud -- iOS Library
 //
-//  Copyright 1996-2019. Adobe, Inc. All Rights Reserved
+//  Copyright 1996-2020. Adobe, Inc. All Rights Reserved
 //
-//  SDK Version: 4.18.7
+//  SDK Version: 4.19.3
 
 #import <Foundation/Foundation.h>
 @class CLLocation, CLBeacon, TVApplicationController,
@@ -161,6 +161,12 @@ FOUNDATION_EXPORT NSString *const __nonnull ADBConfigKeyCallbackDeepLink;
  *  @param data a dictionary pointer containing the context data to be added to the lifecycle hit.
  */
 + (void) collectLifecycleDataWithAdditionalData:(nullable NSDictionary *)data;
+
+/**
+ *  @brief Pauses the collection of lifecycle data.
+ *  @note Should only use this method in the applicationDidEnterBackground delegate method, and it is best to make this call first in the applicationDidEnterBackground method.
+ */
++ (void) pauseCollectingLifecycleData;
 
 /**
  *	@brief allows one-time override of the path for the json config file
