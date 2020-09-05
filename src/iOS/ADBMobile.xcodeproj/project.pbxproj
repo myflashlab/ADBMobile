@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FD638607216A44A3007FE775 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD638606216A44A3007FE775 /* CoreLocation.framework */; };
-		FD63860A216A44FD007FE775 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD638609216A44FD007FE775 /* SystemConfiguration.framework */; };
 		FD91C9B6216A135900A30FCE /* exADBMobile.m in Sources */ = {isa = PBXBuildFile; fileRef = FD91C9B5216A135900A30FCE /* exADBMobile.m */; };
 		FD91C9B7216A135900A30FCE /* exADBMobile.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = FD91C9B4216A135900A30FCE /* exADBMobile.h */; };
 		FD91C9C1216A147100A30FCE /* AdobeMobileLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD91C9BE216A147100A30FCE /* AdobeMobileLibrary.a */; };
@@ -31,12 +29,10 @@
 /* Begin PBXFileReference section */
 		46E6E1C43C509AFB17A052E3 /* MyFlashLabsClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyFlashLabsClass.h; path = ../../../DEPENDENCY/OverrideAdobe/iOS/exOverrideNative/MyFlashLabsClass.h; sourceTree = "<group>"; };
 		46E6EED10309BA2AB498A812 /* FlashRuntimeExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FlashRuntimeExtensions.h; path = ../../../DEPENDENCY/OverrideAdobe/iOS/exOverrideNative/FlashRuntimeExtensions.h; sourceTree = "<group>"; };
-		FD638606216A44A3007FE775 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		FD638609216A44FD007FE775 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		FD91C9B2216A135900A30FCE /* libexADBMobile.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libexADBMobile.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD91C9B4216A135900A30FCE /* exADBMobile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = exADBMobile.h; sourceTree = "<group>"; };
 		FD91C9B5216A135900A30FCE /* exADBMobile.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = exADBMobile.m; sourceTree = "<group>"; };
-		FD91C9BC216A147100A30FCE /* ADBMobile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADBMobile.h; sourceTree = "<group>"; };
+		FD91C9BC216A147100A30FCE /* ADBMobile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ADBMobile.h; path = framework/ADBMobile.h; sourceTree = "<group>"; };
 		FD91C9BE216A147100A30FCE /* AdobeMobileLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = AdobeMobileLibrary.a; sourceTree = "<group>"; };
 		FD91C9C3216A16ED00A30FCE /* BaseADBMobile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseADBMobile.h; sourceTree = "<group>"; };
 		FD91C9C4216A16ED00A30FCE /* BaseADBMobile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseADBMobile.m; sourceTree = "<group>"; };
@@ -47,8 +43,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD63860A216A44FD007FE775 /* SystemConfiguration.framework in Frameworks */,
-				FD638607216A44A3007FE775 /* CoreLocation.framework in Frameworks */,
 				FD91C9C1216A147100A30FCE /* AdobeMobileLibrary.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -59,6 +53,7 @@
 		46E6EE3EC0EDD592049E423B /* Headers */ = {
 			isa = PBXGroup;
 			children = (
+				FD91C9BC216A147100A30FCE /* ADBMobile.h */,
 				46E6EED10309BA2AB498A812 /* FlashRuntimeExtensions.h */,
 				46E6E1C43C509AFB17A052E3 /* MyFlashLabsClass.h */,
 			);
@@ -97,9 +92,6 @@
 		FD91C9BB216A147100A30FCE /* framework */ = {
 			isa = PBXGroup;
 			children = (
-				FD638609216A44FD007FE775 /* SystemConfiguration.framework */,
-				FD638606216A44A3007FE775 /* CoreLocation.framework */,
-				FD91C9BC216A147100A30FCE /* ADBMobile.h */,
 				FD91C9BE216A147100A30FCE /* AdobeMobileLibrary.a */,
 			);
 			path = framework;

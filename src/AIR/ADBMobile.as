@@ -13,10 +13,10 @@ import flash.utils.getQualifiedClassName;
  */
 public class ADBMobile
 {
-	private static const DEMO_ANE:Boolean = false;
+	private static const DEMO_ANE:Boolean = true;
 	
 	public static const EXTENSION_ID:String = "com.myflashlab.air.extensions.ADBMobile";
-	public static const VERSION:String = "4.18.0";
+	public static const VERSION:String = "5.0.2"; // Android 4.18.2, iOS 4.19.3
 	
 	private static var _isInitialized:Boolean;
 	private static var _ex:ADBMobile;
